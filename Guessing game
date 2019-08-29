@@ -1,0 +1,15 @@
+secret_word="Keanu"
+guess=""
+i=0
+i_limit=3
+out_of_guess= False
+while guess!=secret_word and not(out_of_guess):
+    if i<i_limit:
+        i+=1
+        guess=input("Enter guess :")
+    else:
+        out_of_guess=True
+if out_of_guess:
+    print("you Lose, out of guesses")
+else:
+    print("win")
